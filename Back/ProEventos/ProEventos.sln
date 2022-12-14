@@ -3,7 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.4.33110.190
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProEventos.API", "ProEventos.API\ProEventos.API.csproj", "{FBDCEB2F-E1A3-4655-A3D4-7534C2E99DE4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ProEventos.API", "ProEventos.API\ProEventos.API.csproj", "{FBDCEB2F-E1A3-4655-A3D4-7534C2E99DE4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProEventos.Persistence", "ProEventos.Persistence\ProEventos.Persistence.csproj", "{8B05970E-17BE-45EF-9069-D9F77E419F2A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProEventos.Domain", "ProEventos.Domain\ProEventos.Domain.csproj", "{D5E64771-77CD-4240-9707-42F152430052}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProEventos.Application", "ProEventos.Application\ProEventos.Application.csproj", "{F7A47557-953D-4423-9D20-A733D5D69226}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +21,18 @@ Global
 		{FBDCEB2F-E1A3-4655-A3D4-7534C2E99DE4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FBDCEB2F-E1A3-4655-A3D4-7534C2E99DE4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FBDCEB2F-E1A3-4655-A3D4-7534C2E99DE4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8B05970E-17BE-45EF-9069-D9F77E419F2A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8B05970E-17BE-45EF-9069-D9F77E419F2A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8B05970E-17BE-45EF-9069-D9F77E419F2A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8B05970E-17BE-45EF-9069-D9F77E419F2A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D5E64771-77CD-4240-9707-42F152430052}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D5E64771-77CD-4240-9707-42F152430052}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D5E64771-77CD-4240-9707-42F152430052}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D5E64771-77CD-4240-9707-42F152430052}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F7A47557-953D-4423-9D20-A733D5D69226}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F7A47557-953D-4423-9D20-A733D5D69226}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F7A47557-953D-4423-9D20-A733D5D69226}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F7A47557-953D-4423-9D20-A733D5D69226}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -1,0 +1,15 @@
+C:\Users\apare\Documents\dev\projects\ProEventos\Back\ProEventos\ProEventos.Persistence\bin\Debug\net5.0\ProEventos.Persistence.deps.json
+C:\Users\apare\Documents\dev\projects\ProEventos\Back\ProEventos\ProEventos.Persistence\bin\Debug\net5.0\ProEventos.Persistence.dll
+C:\Users\apare\Documents\dev\projects\ProEventos\Back\ProEventos\ProEventos.Persistence\bin\Debug\net5.0\ProEventos.Persistence.pdb
+C:\Users\apare\Documents\dev\projects\ProEventos\Back\ProEventos\ProEventos.Persistence\bin\Debug\net5.0\ProEventos.Domain.dll
+C:\Users\apare\Documents\dev\projects\ProEventos\Back\ProEventos\ProEventos.Persistence\bin\Debug\net5.0\ProEventos.Domain.pdb
+C:\Users\apare\Documents\dev\projects\ProEventos\Back\ProEventos\ProEventos.Persistence\obj\Debug\net5.0\ProEventos.Persistence.csproj.AssemblyReference.cache
+C:\Users\apare\Documents\dev\projects\ProEventos\Back\ProEventos\ProEventos.Persistence\obj\Debug\net5.0\ProEventos.Persistence.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\apare\Documents\dev\projects\ProEventos\Back\ProEventos\ProEventos.Persistence\obj\Debug\net5.0\ProEventos.Persistence.AssemblyInfoInputs.cache
+C:\Users\apare\Documents\dev\projects\ProEventos\Back\ProEventos\ProEventos.Persistence\obj\Debug\net5.0\ProEventos.Persistence.AssemblyInfo.cs
+C:\Users\apare\Documents\dev\projects\ProEventos\Back\ProEventos\ProEventos.Persistence\obj\Debug\net5.0\ProEventos.Persistence.csproj.CoreCompileInputs.cache
+C:\Users\apare\Documents\dev\projects\ProEventos\Back\ProEventos\ProEventos.Persistence\obj\Debug\net5.0\ProEventos.Persistence.csproj.CopyComplete
+C:\Users\apare\Documents\dev\projects\ProEventos\Back\ProEventos\ProEventos.Persistence\obj\Debug\net5.0\ProEventos.Persistence.dll
+C:\Users\apare\Documents\dev\projects\ProEventos\Back\ProEventos\ProEventos.Persistence\obj\Debug\net5.0\refint\ProEventos.Persistence.dll
+C:\Users\apare\Documents\dev\projects\ProEventos\Back\ProEventos\ProEventos.Persistence\obj\Debug\net5.0\ProEventos.Persistence.pdb
+C:\Users\apare\Documents\dev\projects\ProEventos\Back\ProEventos\ProEventos.Persistence\obj\Debug\net5.0\ref\ProEventos.Persistence.dll
