@@ -13,3 +13,6 @@ C:\Users\apare\Documents\dev\projects\ProEventos\Back\ProEventos\ProEventos.Pers
 C:\Users\apare\Documents\dev\projects\ProEventos\Back\ProEventos\ProEventos.Persistence\obj\Debug\net5.0\refint\ProEventos.Persistence.dll
 C:\Users\apare\Documents\dev\projects\ProEventos\Back\ProEventos\ProEventos.Persistence\obj\Debug\net5.0\ProEventos.Persistence.pdb
 C:\Users\apare\Documents\dev\projects\ProEventos\Back\ProEventos\ProEventos.Persistence\obj\Debug\net5.0\ref\ProEventos.Persistence.dll
+C:\Users\apare\Documents\dev\projects\ProEventos\Back\ProEventos\ProEventos.Persistence\bin\Debug\net5.0\ProEventos.Persistence.runtimeconfig.json
+C:\Users\apare\Documents\dev\projects\ProEventos\Back\ProEventos\ProEventos.Persistence\bin\Debug\net5.0\ProEventos.Persistence.runtimeconfig.dev.json
+C:\Users\apare\Documents\dev\projects\ProEventos\Back\ProEventos\ProEventos.Persistence\obj\Debug\net5.0\ProEventos.Persistence.genruntimeconfig.cache
