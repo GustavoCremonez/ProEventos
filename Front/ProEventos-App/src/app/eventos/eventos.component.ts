@@ -1,5 +1,6 @@
-import { HttpClient } from '@angular/common/http';
 import { Component } from '@angular/core';
+import { Evento } from '../models/Evento';
+import { EventoService } from '../services/evento.service';
 
 @Component({
   selector: 'app-eventos',
@@ -7,11 +8,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./eventos.component.scss'],
 })
 export class EventosComponent {
-  public eventos: any = [];
-  public filteredEvents: any = [];
+  public eventos: Evento[] = [];
+  public filteredEvents: Evento[] = [];
 
   private _filterList: string = '';
-  hideImage: boolean = false;
+  public hideImage: boolean = false;
 
   public get filterList(): string {
     return this._filterList;
@@ -25,33 +26,33 @@ export class EventosComponent {
       : this.eventos;
   }
 
-  constructor(private http: HttpClient) {}
+  constructor(private eventoService: EventoService) {}
 
-  ngOnInit(): void {
+  public ngOnInit(): void {
     this.getEventos();
   }
 
   public getEventos(): void {
-    this.http.get('https://localhost:44391/api/Eventos').subscribe({
+    this.eventoService.getEventos().subscribe({
       next: this.handleUpdateEventos.bind(this),
       error: this.handleError.bind(this),
     });
   }
 
-  public handleUpdateEventos(response: any): void {
-    this.eventos = response;
-    this.filteredEvents = response;
+  public handleUpdateEventos(Evento: Evento[]): void {
+    this.eventos = Evento;
+    this.filteredEvents = Evento;
   }
 
   public handleError(error: Error): void {
     console.error(error);
   }
 
-  public handleHideImage() {
+  public handleHideImage(): void {
     this.hideImage = !this.hideImage;
   }
 
-  public handleFilterEvents(filter: string): any {
+  public handleFilterEvents(filter: string): Evento[] {
     filter = filter.toLocaleLowerCase();
 
     return this.eventos.filter(
