@@ -1,4 +1,9 @@
-import { Component } from '@angular/core';
+import { Component, TemplateRef } from '@angular/core';
+
+import { BsModalRef, BsModalService } from 'ngx-bootstrap/modal';
+import { ToastrService } from 'ngx-toastr';
+import { NgxSpinnerService } from 'ngx-spinner';
+
 import { Evento } from '../models/Evento';
 import { EventoService } from '../services/evento.service';
 
@@ -8,11 +13,12 @@ import { EventoService } from '../services/evento.service';
   styleUrls: ['./eventos.component.scss'],
 })
 export class EventosComponent {
+  modalRef: any = BsModalRef;
   public eventos: Evento[] = [];
   public filteredEvents: Evento[] = [];
 
   private _filterList: string = '';
-  public hideImage: boolean = false;
+  public hideImage: boolean = true;
 
   public get filterList(): string {
     return this._filterList;
@@ -26,9 +32,15 @@ export class EventosComponent {
       : this.eventos;
   }
 
-  constructor(private eventoService: EventoService) {}
+  constructor(
+    private eventoService: EventoService,
+    private modalService: BsModalService,
+    private toastr: ToastrService,
+    private spinner: NgxSpinnerService
+  ) {}
 
   public ngOnInit(): void {
+    this.spinner.show();
     this.getEventos();
   }
 
@@ -36,6 +48,7 @@ export class EventosComponent {
     this.eventoService.getEventos().subscribe({
       next: this.handleUpdateEventos.bind(this),
       error: this.handleError.bind(this),
+      complete: () => this.spinner.hide(),
     });
   }
 
@@ -45,7 +58,11 @@ export class EventosComponent {
   }
 
   public handleError(error: Error): void {
-    console.error(error);
+    this.spinner.hide();
+    this.toastr.error(
+      'Ocorreu um erro no sistema, tente novamente mais tarde',
+      'Ocorreu um erro!'
+    );
   }
 
   public handleHideImage(): void {
@@ -61,5 +78,21 @@ export class EventosComponent {
         evento.local.toLocaleLowerCase().indexOf(filter) !== -1 ||
         evento.dataEvento.indexOf(filter) !== -1
     );
+  }
+
+  openModal(template: TemplateRef<any>) {
+    this.modalRef = this.modalService.show(template, { class: 'modal-sm' });
+  }
+
+  confirm(): void {
+    this.modalRef?.hide();
+    this.toastr.success(
+      'O evento foi removido com sucesso',
+      'Evento removido!'
+    );
+  }
+
+  decline(): void {
+    this.modalRef?.hide();
   }
 }

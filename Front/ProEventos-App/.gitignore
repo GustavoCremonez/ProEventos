@@ -56,3 +56,8 @@ baseline.json
 
 # Husky
 .husky/_
+
+
+.angular
+.vscode
+node_modules
