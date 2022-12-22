@@ -1,4 +1,7 @@
-<nav class="navbar navbar-expand-lg navbar-dark bg-primary shadow">
+<nav
+  class="navbar navbar-expand-lg navbar-dark bg-primary shadow"
+  *ngIf="showMenu()"
+>
   <div class="container-fluid">
     <a class="navbar-brand" routerLink="dashboard">ProEventos</a>
     <button
@@ -64,12 +67,12 @@
             <a
               class="dropdown-item"
               routerLinkActive="active"
-              routerLink="perfil"
+              routerLink="user/perfil"
             >
               Perfil
             </a>
             <div role="separator" class="divider"></div>
-            <a class="dropdown-item" href=""> Sair </a>
+            <a class="dropdown-item" routerLink="user/login"> Sair </a>
           </div>
         </li>
       </ul>
